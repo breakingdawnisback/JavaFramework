@@ -18,6 +18,8 @@ public class HelloworldConfiguration {
     public int Age(){
         return 25;
     } 
+
+    //--------Autowiring by a specific method(bean)----------
     @Bean
     public Person person(){
         return new Person("Ashish",27,new Address("Dharam Colony", "Gurugram"));
@@ -27,6 +29,7 @@ public class HelloworldConfiguration {
     public Person person2MethodCall(){
         return new Person(name(),Age(), address());
     }
+//--------------------------------------------------------------
 
     //Alternative Appro
     @Bean

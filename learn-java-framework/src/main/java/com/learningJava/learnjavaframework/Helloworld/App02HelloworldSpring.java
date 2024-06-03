@@ -15,6 +15,7 @@ public static void main(String[] args) {
 
     //3:Retrieveing Beans managed by Spring
     System.out.println(context.getBean("name")); 
+    //Testing
     System.out.println(context.getBean("Age"));
     System.out.println(context.getBean("person"));
     System.out.println(context.getBean("address2"));
